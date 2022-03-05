@@ -6,7 +6,7 @@ function! myconfig#after() abort
 " Personal Settings
 "=============================================================================
 set wrap
-set textwidth=80
+set textwidth=0
 set linebreak
 set nobackup
 set nohlsearch
@@ -18,6 +18,8 @@ set updatetime=100
 " set cmdheight=2
 set shortmess+=c
 set scrolloff=8
+set clipboard=unnamedplus
+
 
 "=============================================================================
 " Custom Keybindings
@@ -276,6 +278,11 @@ endfunction
 " More Custom Vim Settings
 "=============================================================================
 function! myconfig#before() abort
+"=============================================================================
+" Custom settings
+"=============================================================================
+let g:mapleader = ','
+
 "=============================================================================
 " Airline
 "=============================================================================
